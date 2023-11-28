@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/asets/figma3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top-bg">
+      <div class="top-bar container">
+        <div class="top-description">
+          <p class="mbl-hide">Call Toll Free Now: (888) 888-8888</p>
+        </div>
+        <div class="top-description">
+          <p>Today Only: Save 10% With Code SAVE10</p>
+        </div>
+        <div class="top-description">
+          <p class="mbl-hide">Track Order | Reviews</p>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar-bg">
+      <nav class="search-bar collapsible collapsible--expanded">
+        <header class="container search-nav">
+          <div class="company-logo">
+            <img src="/asets/images/company-name.svg" alt="Company Logo" />
+          </div>
+          <div class="input-group">
+            <input type="text" class="input" />
+            <img class="search-icon" src="/asets/images/search.svg" alt="" />
+          </div>
+          <div class="search-toggler">
+            <img src="/asets/images/chevron.svg" alt="" />
+          </div>
+          <div class="search-links">
+            <ul class="search-list collapsible__content">
+              <div class="call-link">
+                <li>
+                  <div class="logo-flex">
+                    <div>
+                      <img
+                        class="search-logos"
+                        src="/asets/images/call.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <a target="_blank" href="#" class="search-description"
+                        >Available 24/7</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <li>
+                <div class="logo-flex">
+                  <div>
+                    <img
+                      class="search-logos"
+                      src="/asets/images/account.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <a target="_blank" href="#" class="search-description"
+                      >sign in Account</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="logo-flex">
+                  <div>
+                    <img
+                      class="search-logos"
+                      src="/asets/images/cart.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <a target="_blank" href="#" class="search-description"
+                      >view Cart</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </nav>
+    </div>
+    <div class="contact-us-bar">
+      <h2 class="contact-us-heading">Billing & Shipping</h2>
+    </div>
+    <div class="primary-bg">
+      <div class="billing container">
+        <div class="my-orders-btn grid order-grid">
+          <a href="/pages/my-Account_Orders.html">
+            <button class="btn btn--grey order-btn">
+              <img src="/asets/images/user-green.svg" alt="" />My Order
+            </button>
+          </a>
+          <a href="/pages/myAccount_Subscription.html">
+            <button class="btn btn--grey order-btn">
+              <img src="/asets/images/calender.svg" alt="" />Subscription
+            </button>
+          </a>
+          <a href="/pages/myAccount_susbscription_Billing.html">
+            <button class="btn btn--secondary order-btn">
+              <img src="/asets/images/truckwhite.svg" alt="" />Billing &
+              Shipping
+            </button>
+          </a>
+          <a href="/pages/myAccount-AccountSettings.html">
+            <button class="btn btn--grey order-btn">
+              <img src="/asets/images/Group.svg" alt="" />Account Setting
+            </button>
+          </a>
+          <button class="btn btn--grey order-btn">
+            <img src="/asets/images/tabler_logout.svg" alt="" />Log Out
+          </button>
+        </div>
+        <div class="allOrders">
+          <h3>Edit Your Billing Address</h3>
+          <div class="checkout-container container">
+            <form
+              class="checkout-form"
+              action="process_checkout.php"
+              method="post"
+            >
+              <div class="checkout-form">
+                <label class="checkout" for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="checkout-form side-by-side">
+                <div>
+                  <label class="checkout" for="first-name">First Name</label>
+                  <input
+                    class="required"
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="checkout" for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+              </div>
+              <div class="checkout-form">
+                <label class="checkout" for="company-name">Company Name</label>
+                <input
+                  type="text"
+                  id="company-name"
+                  name="company-name"
+                  required
+                />
+              </div>
+              <div class="checkout-form">
+                <label class="checkout" for="address">Address</label>
+                <input type="text" id="address" name="address" required />
+              </div>
+              <div class="checkout-form side-by-side full-width">
+                <div>
+                  <label class="checkout" for="city">City</label>
+                  <input type="text" id="city" name="city" required />
+                </div>
+                <div>
+                  <label class="checkout" for="state">State</label>
+                  <input type="text" id="state" name="state" required />
+                </div>
+              </div>
+              <div class="checkout-form">
+                <label class="checkout" for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" required />
+              </div>
+              <div class="checkout-form">
+                <label class="checkout" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </form>
+          </div>
+          <a href="/pages/add-new-card.html">
+            <button class="btn btn--accent">update</button>
+          </a>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container grid grid--1x4">
+          <div class="part1">
+            <h2 class="logo">LOGO</h2>
+            <p class="logo-description">Subscribe to get exclusive offers</p>
+            <input type="email" class="input logo-input" placeholder="Email" />
+            <br />
+            <a href="/pages/myAccount_Subscription.html" target="_blank">
+              <button class="btn btn--accent">Subscribe</button>
+            </a>
+            <div class="footer-logos">
+              <img
+                class="fbook"
+                src="/asets/images/Facebook-f_Logo-Blue-Logo.wine 1.svg"
+                alt=""
+              />
+              <img
+                class="fbook"
+                src="/asets/images/instagram-seeklogo.com 1.svg"
+                alt=""
+              />
+              <img class="fbook" src="/asets/images/pinterest.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="quick-links">
+              <li class="footer-links">
+                <a href="/pages/page-V1.html" target="_blank">Home</a>
+              </li>
+              <li class="footer-links">
+                <a href="/pages/page-V2.html" target="_blank">Shop Products</a>
+              </li>
+              <li class="footer-links">
+                <a href="/pages/contact-us.html" target="_blank">Contact Us</a>
+              </li>
+              <li class="footer-links">
+                <a href="/pages/about-us.html" target="_blank">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <h3 class="footer-heading">Help</h3>
+            <ul class="quick-links">
+              <li class="footer-links"><a href="#">FAQs</a></li>
+              <li class="footer-links"><a href="#">Term of Services</a></li>
+              <li class="footer-links"><a href="#">Privacy Policy</a></li>
+              <li class="footer-links"><a href="#">Shipping Policy</a></li>
+              <li class="footer-links">
+                <a href="#">Refunds/Returns Policy</a>
+              </li>
+              <li class="footer-links"><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h3 class="footer-heading">Contacts</h3>
+            <ul class="quick-links">
+              <li>
+                <div class="media">
+                  <div class="media-logo">
+                    <img
+                      src="/asets/images/1071018_location_logo_media_pin_social_icon 1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="media-body">
+                    <a href="#"
+                      >4000 Greenbriar Dr. Ste 200 Stafford, TX 77477</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media-logo">
+                    <img
+                      src="/asets/images/1078686_logo_media_phone_social_icon 1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="media-body">
+                    <a href="#">+1 (888) 888-8888</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media-logo">
+                    <img
+                      src="/asets/images/1011336_email_envelope_mail_message_send_icon 1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="media-body">
+                    <a href="#">support@airfiltersfactory.com</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="end-bg">
+      <div class="end-bar container">
+        <div class="copyright">
+          <p class="copyright-description">
+            © 2023 Air Filters Factory. All Rights Reserved.
+          </p>
+        </div>
+        <div class="end-img">
+          <img src="/asets/images/credit-card-pay-pal-icons 2.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/asets/script.js"></script>
+  </body>
+</html>
